@@ -1,0 +1,433 @@
+<!doctype html>
+<html lang="en" data-fls-darklite="">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="preload" href="./assets/fonts/LibreBodoni-Italic.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/IBMPlexMono-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/IBMPlexMono-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/IBMPlexMono-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="shortcut icon" href="./assets/img/favicon.ico">
+		<title>Project</title>
+		<script type="module" crossorigin="" src="./js/app.min.js?v=1762023561948"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1762023561948">
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header">
+				<div class="header__container">
+					<div class="header__body">
+						<a href="index.html" class="header__logo">
+							<svg width="157" height="40" viewbox="0 0 157 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M59.0837 2.36942V4.85203H51.4436V8.83177H58.4519V11.2388H51.4436V15.1877H59.2863V17.6703H48.6313V2.36942H59.0837Z" fill="currentColor"></path>
+								<path d="M68.9069 9.87564L74.3426 17.6703H71.0152L66.9668 11.7161L63.0283 17.6703H59.9036L65.1847 9.89624L60.1989 2.36942H63.4987L67.1523 8.06604L70.8127 2.36942H73.9305L68.9069 9.87564Z" fill="currentColor"></path>
+								<path d="M75.3813 2.36942H82.5511C83.1073 2.36942 83.6327 2.42436 84.1272 2.53424C84.6216 2.64412 85.0783 2.80551 85.5007 3.01153C85.923 3.22099 86.3007 3.47166 86.6338 3.7704C86.9703 4.06913 87.2553 4.40221 87.4888 4.77306C87.7258 5.1439 87.9043 5.54909 88.0279 5.98518C88.1515 6.42127 88.2168 6.88483 88.2168 7.37929C88.2168 7.87375 88.155 8.33731 88.0279 8.77683C87.9009 9.21636 87.7189 9.62154 87.4854 9.99239C87.2485 10.3632 86.9635 10.6997 86.6304 11.0019C86.2939 11.3007 85.9162 11.5548 85.4972 11.7642C85.0749 11.9737 84.6182 12.1351 84.1237 12.2449C83.6293 12.3583 83.1073 12.4132 82.5545 12.4132H78.2005V17.6669H75.3882V2.36942H75.3813ZM82.3691 9.97865C82.8361 9.97865 83.2584 9.92028 83.6327 9.8001C84.007 9.67992 84.3263 9.50823 84.5873 9.28503C84.8483 9.06184 85.0508 8.78714 85.1916 8.46779C85.3324 8.14845 85.4045 7.78791 85.4045 7.38616C85.4045 6.98441 85.3359 6.63416 85.1951 6.31482C85.0543 5.99548 84.8586 5.72421 84.5976 5.50445C84.3401 5.28469 84.0241 5.113 83.6533 4.99282C83.2825 4.87264 82.867 4.81426 82.4068 4.81426H78.197V9.98209H82.3691V9.97865Z" fill="currentColor"></path>
+								<path d="M86.7966 17.6703L92.2838 2.36942H96.3391L101.754 17.6703H98.7633L97.5546 14.0717H90.9549L89.7291 17.6703H86.7966ZM96.7511 11.6715L94.2754 4.27859L91.7653 11.6715H96.7511Z" fill="currentColor"></path>
+								<path d="M116.474 17.6703H112.254L105.397 4.60137V17.6703H102.68V2.36942H107.223L113.761 14.7894V2.36942H116.477V17.6703H116.474Z" fill="currentColor"></path>
+								<path d="M118.122 2.36942H123.427C124.204 2.36942 124.938 2.45183 125.625 2.61665C126.312 2.78147 126.947 3.0184 127.524 3.32744C128.101 3.63648 128.619 4.01763 129.079 4.46402C129.536 4.91041 129.924 5.41861 130.244 5.98518C130.559 6.55175 130.803 7.17326 130.975 7.84972C131.143 8.52617 131.229 9.24726 131.229 10.0199C131.229 10.7925 131.143 11.5135 130.975 12.19C130.807 12.8665 130.563 13.488 130.244 14.0545C129.928 14.6211 129.54 15.1293 129.079 15.5757C128.623 16.0221 128.104 16.4032 127.524 16.7123C126.947 17.0213 126.312 17.2582 125.625 17.4231C124.938 17.5879 124.204 17.6703 123.427 17.6703H118.122V2.36942ZM123.393 15.1774C124.183 15.1774 124.887 15.0606 125.505 14.8306C126.126 14.6005 126.652 14.264 127.081 13.821C127.51 13.3815 127.84 12.8424 128.067 12.2037C128.293 11.5651 128.406 10.8371 128.406 10.0199C128.406 9.20262 128.293 8.47466 128.067 7.83598C127.84 7.1973 127.51 6.6582 127.081 6.21867C126.652 5.77915 126.126 5.44264 125.505 5.20915C124.883 4.97565 124.179 4.86233 123.393 4.86233H120.893V15.1774H123.393Z" fill="currentColor"></path>
+								<path d="M135.528 17.6703H132.716V2.36942H135.528V17.6703Z" fill="currentColor"></path>
+								<path d="M70.355 37.903L75.8422 22.6021H79.8974L85.3125 37.903H82.3217L81.113 34.3044H74.5133L73.2874 37.903H70.355ZM80.3095 31.9076L77.8337 24.5147L75.3236 31.9076H80.3095Z" fill="currentColor"></path>
+								<path d="M87.8809 30.2515C87.8809 31.1237 87.9771 31.9031 88.1728 32.5899C88.3685 33.2732 88.6501 33.8535 89.0244 34.324C89.3987 34.7944 89.8588 35.1549 90.4013 35.4022C90.9439 35.6494 91.5654 35.773 92.259 35.773C92.9011 35.773 93.4952 35.6769 94.0446 35.4846C94.5905 35.2923 95.0678 35.0244 95.4764 34.6776C95.8816 34.3308 96.2078 33.9222 96.4516 33.4449C96.6954 32.9676 96.8293 32.4457 96.8568 31.8791H92.0804V29.7193H99.5386V37.9054H96.8843V33.8501C96.692 34.5128 96.4207 35.1137 96.0739 35.6563C95.7271 36.1988 95.3151 36.6555 94.8412 37.0366C94.3673 37.4178 93.8385 37.7097 93.2548 37.9157C92.6711 38.1217 92.0461 38.2247 91.3731 38.2247C90.7584 38.2247 90.1781 38.1354 89.6253 37.9603C89.0759 37.7852 88.5643 37.5311 88.0973 37.2015C87.6303 36.8718 87.2079 36.4701 86.8336 35.9996C86.4559 35.5258 86.1366 34.997 85.8722 34.4064C85.6078 33.8158 85.4052 33.1736 85.2644 32.4766C85.1236 31.7795 85.0515 31.0413 85.0515 30.2584C85.0515 29.4755 85.1305 28.7132 85.2919 28.0127C85.4533 27.3088 85.6833 26.6632 85.9889 26.0726C86.2911 25.482 86.6585 24.9532 87.0912 24.4828C87.5238 24.0123 88.008 23.6175 88.5505 23.2913C89.0931 22.965 89.6837 22.7178 90.3258 22.5461C90.9679 22.3744 91.6478 22.2852 92.3689 22.2852C93.2617 22.2852 94.0961 22.4191 94.8721 22.6835C95.6481 22.9479 96.3418 23.329 96.953 23.8269C97.5642 24.3214 98.0758 24.9223 98.4913 25.6296C98.9068 26.337 99.1952 27.1302 99.3566 28.0093H96.5478C96.4276 27.4839 96.2387 27.0238 95.9881 26.622C95.7374 26.2203 95.4318 25.8837 95.0747 25.6125C94.7176 25.3412 94.3124 25.1318 93.8591 24.991C93.4059 24.8502 92.908 24.7781 92.3757 24.7781C91.6684 24.7781 91.0366 24.9017 90.4803 25.1455C89.9206 25.3893 89.4502 25.7464 89.0656 26.2168C88.681 26.6872 88.3857 27.2607 88.1831 27.9406C87.9805 28.6205 87.8775 29.3931 87.8775 30.2584L87.8809 30.2515Z" fill="currentColor"></path>
+								<path d="M111.642 22.6044V25.087H104.002V29.0667H111.011V31.4738H104.002V35.4226H111.845V37.9052H101.19V22.6044H111.642Z" fill="currentColor"></path>
+								<path d="M126.876 37.903H122.656L115.799 24.8341V37.903H113.083V22.6021H117.626L124.164 35.0221V22.6021H126.88V37.903H126.876Z" fill="currentColor"></path>
+								<path d="M131.186 30.2505C131.186 31.1158 131.289 31.8918 131.491 32.5683C131.694 33.2447 131.989 33.8216 132.374 34.292C132.758 34.7625 133.229 35.1161 133.785 35.3634C134.341 35.6072 134.973 35.7308 135.684 35.7308C136.831 35.7308 137.754 35.4046 138.455 34.759C139.155 34.11 139.622 33.1417 139.856 31.8609H142.658C142.503 32.8533 142.232 33.7426 141.837 34.529C141.442 35.3153 140.944 35.9814 140.343 36.5308C139.743 37.0802 139.049 37.4992 138.263 37.791C137.476 38.0829 136.614 38.2271 135.677 38.2271C134.956 38.2271 134.276 38.1413 133.634 37.9662C132.992 37.7945 132.401 37.5438 131.859 37.221C131.316 36.8948 130.829 36.4999 130.399 36.0295C129.967 35.5591 129.599 35.0303 129.297 34.4397C128.995 33.8491 128.761 33.2035 128.6 32.4996C128.439 31.7957 128.36 31.0471 128.36 30.2539C128.36 29.4607 128.439 28.7087 128.6 28.0082C128.761 27.3043 128.991 26.6588 129.297 26.0681C129.599 25.4775 129.967 24.9487 130.399 24.4783C130.832 24.0079 131.316 23.613 131.859 23.2868C132.401 22.9606 132.992 22.7133 133.634 22.5417C134.276 22.37 134.956 22.2807 135.677 22.2807C136.614 22.2807 137.476 22.4249 138.263 22.7168C139.049 23.0087 139.743 23.4276 140.343 23.977C140.944 24.5264 141.442 25.1925 141.837 25.9789C142.232 26.7652 142.503 27.6545 142.658 28.6469H139.856C139.619 27.3627 139.152 26.3978 138.455 25.7488C137.754 25.0998 136.831 24.777 135.684 24.777C134.973 24.777 134.341 24.9007 133.785 25.1445C133.229 25.3883 132.758 25.7454 132.374 26.2158C131.989 26.6862 131.694 27.2597 131.491 27.9395C131.289 28.6194 131.186 29.392 131.186 30.2573V30.2505Z" fill="currentColor"></path>
+								<path d="M156.458 22.6044L150.597 32.2189V37.9052H147.785V32.2292L141.971 22.6044H145.137L149.223 29.5783L153.364 22.6044H156.462H156.458Z" fill="currentColor"></path>
+								<path d="M151.463 1.99442C148.706 1.99442 146.464 4.23667 146.464 6.99399C146.464 9.75131 148.706 11.9936 151.463 11.9936C154.221 11.9936 156.463 9.75131 156.463 6.99399C156.463 4.23667 154.217 1.99442 151.463 1.99442ZM151.463 11.2999C149.087 11.2999 147.157 9.36672 147.157 6.99399C147.157 4.62125 149.087 2.68804 151.463 2.68804C153.84 2.68804 155.769 4.61782 155.769 6.99399C155.769 9.37016 153.836 11.2999 151.463 11.2999Z" fill="currentColor"></path>
+								<path d="M153.661 5.18192V9.06895H152.967V6.3597L149.966 9.31618L149.482 8.82515L152.469 5.87554H149.722V5.18192H153.661Z" fill="currentColor"></path>
+								<path d="M37.7646 4.81415V8.75955H-0.00341797V0H33.5274L37.7646 4.81415Z" fill="currentColor"></path>
+								<path d="M37.7646 15.6205H-0.00341797V24.3801H37.7646V15.6205Z" fill="currentColor"></path>
+								<path d="M37.7646 31.2411V40.0006H4.23386L-0.00341797 35.1418V31.2411H37.7646Z" fill="currentColor"></path>
+							</svg>
+						</a>
+						<div class="header__menu menu">
+							<button type="button" data-fls-menu="" class="menu__icon icon-menu">
+								<span class="icon-menu__text">Menu</span>
+								<span class="icon-menu__close">Close</span>
+							</button>
+							<nav class="menu__body">
+								<ul class="menu__list">
+									<li class="menu__item">
+										<a href="#" class="menu__link link-decor" data-hover-toggle="">Services</a>
+										<div class="submenu" data-submenu="">
+											<div class="submenu__head">
+												<button type="button" class="submenu__close" data-close-parent="">
+													<span class="submenu__close-icon">
+														<svg width="12" height="10" viewbox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M11.5 4.99996L0.500001 4.99996M0.500001 4.99996L3.97369 8.66663M0.500001 4.99996L3.97369 1.33329" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+														</svg>
+													</span>
+													<span class="submenu__close-text">Back</span>
+												</button>
+											</div>
+											<ul class="submenu__list">
+												<li class="submenu__item">
+													<a href="#" class="submenu__link">Marketing Audit</a>
+												</li>
+												<li class="submenu__item">
+													<a href="#" class="submenu__link">SEO</a>
+												</li>
+												<li class="submenu__item">
+													<a href="#" class="submenu__link">Web Design</a>
+												</li>
+												<li class="submenu__item">
+													<a href="#" class="submenu__link">Web Development</a>
+												</li>
+												<li class="submenu__item">
+													<a href="#" class="submenu__link">PPC</a>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li class="menu__item">
+										<a href="#" class="menu__link link-decor">Portfolio</a>
+									</li>
+									<li class="menu__item">
+										<a href="#" class="menu__link link-decor">Blog</a>
+									</li>
+									<li class="menu__item">
+										<a href="#" class="menu__link link-decor">Contact us</a>
+									</li>
+								</ul>
+								<div class="menu__bottom">
+									<a href="mailto:expanid@gmail.com" class="menu__contact">expanid@gmail.com</a>
+									<div class="menu__socials">
+										<a href="#" class="menu__social">Instagram</a>
+										<a href="#" class="menu__social">Linkendin</a>
+									</div>
+								</div>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</header>
+			<main class="page page--project">
+				<section class="project-detail">
+					<div class="project-detail__container">
+						<div class="project-detail__head">
+							<div class="project-detail__name">
+								<div class="project-detail__label">Project:</div>
+								<h1 class="project-detail__title title title--h1">Fraktal Beauty. Mind + Soul</h1>
+							</div>
+							<div class="project-detail__category">
+								<div class="project-detail__block">
+									<div class="project-detail__label">Services provided:</div>
+									<div class="tags-block">
+										<a href="#" class="tags-block__btn">React</a>
+										<a href="#" class="tags-block__btn">React Native</a>
+										<a href="#" class="tags-block__btn">Nestjs</a>
+										<a href="#" class="tags-block__btn">Branding</a>
+										<a href="#" class="tags-block__btn">UI/UX</a>
+									</div>
+								</div>
+								<div class="project-detail__block">
+									<div class="project-detail__label">Industry:</div>
+									<div class="tags-block">
+										<a href="#" class="tags-block__btn">Fashion</a>
+										<a href="#" class="tags-block__btn">Health</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="project-detail__promo">
+						<img alt="Image" loading="lazy" src="./assets/img/project/image-1.webp">
+						<a href="#" class="project-detail__sitelink">
+							<span>Visit Website</span>
+							<span class="project-detail__sitelink-arrow">
+								<svg width="18" height="18" viewbox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M1.20605 13.0005L16.7945 4.00047M16.7945 4.00047L4.29704 0.823582M16.7945 4.00047L13.297 16.412" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg>
+							</span>
+						</a>
+					</div>
+					<div class="project-detail__container">
+						<div class="project-detail__body">
+							<div class="project-detail__aside">
+								<div class="project-detail__label">Project:</div>
+								<div class="project-detail__subtitle">Fraktal Beauty</div>
+							</div>
+							<div class="project-detail__text">
+								<p>
+									In the heart of innovation and care, Fraktal Beauty emerges as a sanctuary for those navigating the
+                    journey of menopause. More than a brand; they promise renewal, empowerment, and beauty in every
+                    phase of life. At Fraktal Beauty, they believe in combining the best of what nature offers with
+                    scientific research to address the unique needs of skin and body during menopause.
+								</p>
+								<h6>The challenge</h6>
+								<p>
+									Creating a real and relatable brand identity for Fraktal Beauty had its challenges, especially since
+                    it focuses on menopause, which isn’t talked about much in the beauty world. Here are some things
+                    they likely had to deal with:
+								</p>
+								<p>
+									<b>Educating the Audience:</b>
+									Not everyone knows what happens to your skin and body during
+                    menopause.
+                    Fraktal Beauty had to explain these changes, why they matter, and how its products meet these unique
+                    needs.
+								</p>
+							</div>
+						</div>
+						<div class="project-detail__img">
+							<img alt="Image" loading="lazy" src="./assets/img/project/image-2.webp">
+						</div>
+						<div class="project-detail__body">
+							<div class="project-detail__text">
+								<h6>Digital presence</h6>
+								<p>
+									<b>Educating the Audience:</b>
+									Not everyone knows what happens to your skin and body during
+                    menopause.
+                    Fraktal Beauty had to explain these changes, why they matter, and how its products meet these unique
+                    needs.
+								</p>
+							</div>
+						</div>
+						<div class="project-detail__img">
+							<img alt="Image" loading="lazy" src="./assets/img/project/image-3.webp">
+						</div>
+						<div class="project-detail__body">
+							<div class="project-detail__text">
+								<p>
+									<b>User-Friendly Navigation:</b>
+									Making sure that Fraktal Beauty’s website is easy to use for
+                    everyone,
+                    regardless of their age or how comfortable they are with technology, is really important. People
+                    should be able to find what they need without any trouble, and there should be clear info about the
+                    products and how they help with menopause.
+								</p>
+								<p>
+									<b>Engagement and Community Building:</b>
+									Building a community online where people can connect and
+                    support
+                    each other is another big challenge. We needed to create a space where users can share their
+                    experiences, ask questions, and get advice, by adding forums, Q&A sections, or blogs
+								</p>
+							</div>
+						</div>
+						<div class="project-detail__img">
+							<img alt="Image" loading="lazy" src="./assets/img/project/image-4.webp">
+						</div>
+						<div class="project-detail__body">
+							<div class="project-detail__text">
+								<p>
+									When it comes to products like those from Fraktal Beauty that focus on health and beauty, especially
+                    for things like menopause, it’s super important to be open and honest about what’s in the products,
+                    how they help, and what other people have said about them. But finding the right way to present it
+                    can be tricky.
+								</p>
+								<p>
+									The website must use language that is inclusive, sensitive, and empowering, avoiding any negative
+                    connotations associated with aging or menopause. It’s all about choosing words carefully and keeping
+                    a positive vibe so that everyone who visits feels good about being there.
+								</p>
+							</div>
+						</div>
+						<div data-fls-slider="" class="project-detail__slider swiper">
+							<div class="project-detail__wrapper swiper-wrapper">
+								<div class="project-detail__slide swiper-slide">
+									<img alt="Image" loading="lazy" src="./assets/img/project/image-5.webp">
+								</div>
+								<div class="project-detail__slide swiper-slide">
+									<img alt="Image" loading="lazy" src="./assets/img/project/image-4.webp">
+								</div>
+								<div class="project-detail__slide swiper-slide">
+									<img alt="Image" loading="lazy" src="./assets/img/project/image-3.webp">
+								</div>
+							</div>
+							<div class="swiper-pagination"></div>
+						</div>
+					</div>
+				</section>
+				<section class="discuss">
+					<div class="discuss__container">
+						<a href="#" class="discuss__biglink">
+							<span>
+								Discuss
+								<br>
+								my project
+							</span>
+							<span class="discuss__biglink-arrow">
+								<svg width="44" height="32" viewbox="0 0 44 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M1.50073 31.0096L42.2039 7.50962M42.2039 7.50962L36.8503 27.9211M42.2039 7.50962L21.8503 1.94029" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg>
+							</span>
+						</a>
+						<div class="discuss__text">
+							Or you can
+							<a href="#" class="discuss__link">Book a Free Demo Сall</a>
+							at a convenient time
+						</div>
+					</div>
+				</section>
+			</main>
+			<footer class="footer fixed-block-hide">
+				<div class="footer__container">
+					<div class="footer__head">
+						<div class="footer__media">
+							<div class="footer__media-icon img-darklite">
+								<img class="img-darklite__dark" alt="Image" loading="lazy" src="./assets/img/footer/clutch-dark.webp">
+								<img class="img-darklite__light" alt="Image" loading="lazy" src="./assets/img/footer/clutch-light.webp">
+							</div>
+							<div class="footer__media-icon img-darklite">
+								<img class="img-darklite__dark" alt="Image" loading="lazy" src="./assets/img/footer/manifest-dark.webp">
+								<img class="img-darklite__light" alt="Image" loading="lazy" src="./assets/img/footer/manifest-light.webp">
+							</div>
+							<div class="footer__media-icon img-darklite">
+								<img class="img-darklite__dark" alt="Image" loading="lazy" src="./assets/img/footer/designrush-dark.webp">
+								<img class="img-darklite__light" alt="Image" loading="lazy" src="./assets/img/footer/designrush-light.webp">
+							</div>
+							<div class="footer__media-icon img-darklite">
+								<img class="img-darklite__dark" alt="Image" loading="lazy" src="./assets/img/footer/goodfirms-dark.webp">
+								<img class="img-darklite__light" alt="Image" loading="lazy" src="./assets/img/footer/goodfirms-light.webp">
+							</div>
+						</div>
+						<div class="footer__actions">
+							<div class="footer__socials">
+								<a href="#" class="footer__social link-decor">Instagram</a>
+								<a href="#" class="footer__social link-decor">Behance</a>
+								<a href="#" class="footer__social link-decor">Linkedin</a>
+							</div>
+							<div class="footer__langs">
+								<a href="#" class="footer__lang">En</a>
+								<a href="#" class="footer__lang">Ua</a>
+								<a href="#" class="footer__lang">DE</a>
+								<a href="#" class="footer__lang">He</a>
+								<a href="#" class="footer__lang">Sk</a>
+								<a href="#" class="footer__lang">Es</a>
+							</div>
+						</div>
+					</div>
+					<nav class="footer__menu">
+						<div class="footer__menu-col">
+							<div class="footer__menu-title">AUDITS</div>
+							<ul class="footer__menu-list">
+								<li class="footer__menu-item">
+									<a href="#" class="footer__menu-link link-decor">SEO AUDIT</a>
+								</li>
+								<li class="footer__menu-item">
+									<a href="#" class="footer__menu-link link-decor">GOOGLE ADS AUDIT</a>
+								</li>
+								<li class="footer__menu-item">
+									<a href="#" class="footer__menu-link link-decor">WEBSITE AUDIT</a>
+								</li>
+								<li class="footer__menu-item">
+									<a href="#" class="footer__menu-link link-decor">DESIGN AUDIT</a>
+								</li>
+								<li class="footer__menu-item">
+									<a href="#" class="footer__menu-link link-decor">BING ADS AUDIT</a>
+								</li>
+								<li class="footer__menu-item">
+									<a href="#" class="footer__menu-link link-decor">TECHNICAL WEBSITE AUDIT</a>
+								</li>
+								<li class="footer__menu-item">
+									<a href="#" class="footer__menu-link link-decor">MARKETING AUDIT</a>
+								</li>
+							</ul>
+						</div>
+						<div class="footer__menu-col">
+							<div class="footer__menu-title">SEO</div>
+							<ul class="footer__menu-list">
+								<li class="footer__menu-item">
+									<a href="#" class="footer__menu-link link-decor">MONTHLY SEO SERVICES</a>
+								</li>
+								<li class="footer__menu-item">
+									<a href="#" class="footer__menu-link link-decor">ECOMMERCE SEO</a>
+								</li>
+								<li class="footer__menu-item">
+									<a href="#" class="footer__menu-link link-decor">LOCAL SEO SERVICES</a>
+								</li>
+								<li class="footer__menu-item">
+									<a href="#" class="footer__menu-link link-decor">SEO CONSULTANT</a>
+								</li>
+								<li class="footer__menu-item">
+									<a href="#" class="footer__menu-link link-decor">SHOPIFY SEO EXPERT</a>
+								</li>
+								<li class="footer__menu-item">
+									<a href="#" class="footer__menu-link link-decor">WORDPRESS SEO COMPANY</a>
+								</li>
+								<li class="footer__menu-item">
+									<a href="#" class="footer__menu-link link-decor">FINTECH SEO AGENCY</a>
+								</li>
+							</ul>
+						</div>
+						<div class="footer__menu-col">
+							<div class="footer__menu-title">WEB DESIGN</div>
+							<ul class="footer__menu-list">
+								<li class="footer__menu-item">
+									<a href="#" class="footer__menu-link link-decor">WEB DESIGN COMPANY</a>
+								</li>
+								<li class="footer__menu-item">
+									<a href="#" class="footer__menu-link link-decor">WORDPRESS WEB DESIGN</a>
+								</li>
+								<li class="footer__menu-item">
+									<a href="#" class="footer__menu-link link-decor">ECOMMERCE WEB DESIGN</a>
+								</li>
+								<li class="footer__menu-item">
+									<a href="#" class="footer__menu-link link-decor">LANDING PAGE DESIGN</a>
+								</li>
+								<li class="footer__menu-item">
+									<a href="#" class="footer__menu-link link-decor">WHITE LABEL WEB DESIGN</a>
+								</li>
+								<li class="footer__menu-item">
+									<a href="#" class="footer__menu-link link-decor">WEBSITE REDESIGN</a>
+								</li>
+							</ul>
+						</div>
+						<div class="footer__menu-col">
+							<div class="footer__menu-title">DEVELOPMENT</div>
+							<ul class="footer__menu-list">
+								<li class="footer__menu-item">
+									<a href="#" class="footer__menu-link link-decor">SHOPIFY DEVELOPMENT SERVICES</a>
+								</li>
+								<li class="footer__menu-item">
+									<a href="#" class="footer__menu-link link-decor">SHOPIFY MAINTENANCE SERVICES</a>
+								</li>
+								<li class="footer__menu-item">
+									<a href="#" class="footer__menu-link link-decor">HTML TO WORDPRESS SERVICE</a>
+								</li>
+								<li class="footer__menu-item">
+									<a href="#" class="footer__menu-link link-decor">LANDING PAGE OPTIMIZATION SERVICES</a>
+								</li>
+								<li class="footer__menu-item">
+									<a href="#" class="footer__menu-link link-decor">CUSTOM WEBSITE DEVELOPMENT</a>
+								</li>
+								<li class="footer__menu-item">
+									<a href="#" class="footer__menu-link link-decor">LANDING PAGE DEVELOPMENT</a>
+								</li>
+								<li class="footer__menu-item">
+									<a href="#" class="footer__menu-link link-decor">HTML DEVELOPMENT</a>
+								</li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+			</footer>
+		</div>
+		<div class="fixed-block">
+			<div class="fixed-block__body">
+				<a href="#" class="fixed-block__link">
+					<span>Contact us</span>
+				</a>
+				<button type="button" class="fixed-block__theme" data-fls-darklite-set="">
+					<svg class="fixed-block__theme-dark" width="28" height="29" viewbox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M14.5331 24.4995C18.3592 24.5397 21.8543 22.335 23.466 18.8647C22.4517 19.3073 21.3531 19.524 20.2468 19.5C15.9099 19.4951 12.3953 15.9805 12.3904 11.6436C12.4338 8.71001 14.0525 6.02665 16.6271 4.61967C15.9327 4.53127 15.233 4.49169 14.5331 4.50145C9.01063 4.50145 4.53406 8.97819 4.53406 14.5005C4.53406 20.0229 9.01063 24.4995 14.5331 24.4995Z" fill="currentColor"></path>
+					</svg>
+					<svg class="fixed-block__theme-light" width="28" height="29" viewbox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M14 2.5C14.6025 2.5 15.0909 2.98844 15.0909 3.59089V5.77272C15.0909 6.37522 14.6025 6.86361 14 6.86361C13.3975 6.86361 12.9091 6.37517 12.9091 5.77272V3.59089C12.9091 2.98844 13.3975 2.5 14 2.5Z" fill="currentColor"></path>
+						<path d="M13.9999 8.44794C10.6575 8.44794 7.94794 11.1575 7.94794 14.4999C7.94794 17.8422 10.6575 20.5518 13.9999 20.5518C17.3423 20.5518 20.0518 17.8422 20.0518 14.4999C20.0518 11.1575 17.3423 8.44794 13.9999 8.44794Z" fill="currentColor"></path>
+						<path d="M7.0831 6.0395C6.65707 5.61346 5.96634 5.61346 5.54035 6.0395C5.11432 6.46553 5.11432 7.15626 5.54035 7.58229L7.09879 9.14073C7.52482 9.56677 8.21556 9.56677 8.64155 9.14073C9.06758 8.7147 9.06758 8.02397 8.64155 7.59794L7.0831 6.0395Z" fill="currentColor"></path>
+						<path d="M2 14.5001C2 13.8976 2.48844 13.4092 3.09089 13.4092H5.27272C5.87522 13.4092 6.36361 13.8976 6.36361 14.5001C6.36361 15.1026 5.87522 15.591 5.27272 15.591H3.09089C2.48844 15.5911 2 15.1027 2 14.5001Z" fill="currentColor"></path>
+						<path d="M8.64155 21.4013C9.06758 20.9753 9.06758 20.2847 8.64155 19.8586C8.21551 19.4326 7.52478 19.4326 7.09879 19.8586L5.54035 21.417C5.11432 21.843 5.11432 22.5338 5.54035 22.9598C5.96638 23.3858 6.65707 23.3858 7.0831 22.9598L8.64155 21.4013Z" fill="currentColor"></path>
+						<path d="M14.0001 22.137C14.6026 22.137 15.091 22.6254 15.091 23.2279V25.4097C15.091 26.0122 14.6026 26.5006 14.0001 26.5006C13.3976 26.5006 12.9092 26.0122 12.9092 25.4097V23.2279C12.9092 22.6254 13.3976 22.137 14.0001 22.137Z" fill="currentColor"></path>
+						<path d="M20.9014 19.8586C20.4753 19.4326 19.7846 19.4326 19.3587 19.8586C18.9325 20.2847 18.9325 20.9753 19.3587 21.4013L20.917 22.9598C21.3431 23.3858 22.0338 23.3858 22.4598 22.9598C22.8859 22.5338 22.8859 21.843 22.4598 21.417L20.9014 19.8586Z" fill="currentColor"></path>
+						<path d="M21.6361 14.5001C21.6361 13.8976 22.1245 13.4092 22.727 13.4092H24.9088C25.5113 13.4092 25.9997 13.8976 25.9997 14.5001C25.9997 15.1026 25.5113 15.591 24.9088 15.591H22.727C22.1245 15.5911 21.6361 15.1027 21.6361 14.5001Z" fill="currentColor"></path>
+						<path d="M22.4598 7.58229C22.8859 7.15626 22.8859 6.46553 22.4598 6.0395C22.0338 5.61346 21.3431 5.61346 20.917 6.0395L19.3587 7.59794C18.9325 8.02397 18.9325 8.7147 19.3587 9.14073C19.7846 9.56677 20.4753 9.56677 20.9014 9.14073L22.4598 7.58229Z" fill="currentColor"></path>
+					</svg>
+					<span class="fixed-block__theme-dark">Dark mode</span>
+					<span class="fixed-block__theme-light">Light mode</span>
+				</button>
+			</div>
+		</div>
+	</body>
+</html>

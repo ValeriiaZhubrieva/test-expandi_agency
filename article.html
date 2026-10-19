@@ -1,0 +1,610 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="preload" href="./assets/fonts/LibreBodoni-Italic.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/IBMPlexMono-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/IBMPlexMono-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/IBMPlexMono-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="shortcut icon" href="./assets/img/favicon.ico">
+		<title>Article</title>
+		<script type="module" crossorigin="" src="./js/app.min.js?v=1762023561948"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1762023561948">
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header">
+				<div class="header__container">
+					<div class="header__body">
+						<a href="index.html" class="header__logo">
+							<svg width="157" height="40" viewbox="0 0 157 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M59.0837 2.36942V4.85203H51.4436V8.83177H58.4519V11.2388H51.4436V15.1877H59.2863V17.6703H48.6313V2.36942H59.0837Z" fill="currentColor"></path>
+								<path d="M68.9069 9.87564L74.3426 17.6703H71.0152L66.9668 11.7161L63.0283 17.6703H59.9036L65.1847 9.89624L60.1989 2.36942H63.4987L67.1523 8.06604L70.8127 2.36942H73.9305L68.9069 9.87564Z" fill="currentColor"></path>
+								<path d="M75.3813 2.36942H82.5511C83.1073 2.36942 83.6327 2.42436 84.1272 2.53424C84.6216 2.64412 85.0783 2.80551 85.5007 3.01153C85.923 3.22099 86.3007 3.47166 86.6338 3.7704C86.9703 4.06913 87.2553 4.40221 87.4888 4.77306C87.7258 5.1439 87.9043 5.54909 88.0279 5.98518C88.1515 6.42127 88.2168 6.88483 88.2168 7.37929C88.2168 7.87375 88.155 8.33731 88.0279 8.77683C87.9009 9.21636 87.7189 9.62154 87.4854 9.99239C87.2485 10.3632 86.9635 10.6997 86.6304 11.0019C86.2939 11.3007 85.9162 11.5548 85.4972 11.7642C85.0749 11.9737 84.6182 12.1351 84.1237 12.2449C83.6293 12.3583 83.1073 12.4132 82.5545 12.4132H78.2005V17.6669H75.3882V2.36942H75.3813ZM82.3691 9.97865C82.8361 9.97865 83.2584 9.92028 83.6327 9.8001C84.007 9.67992 84.3263 9.50823 84.5873 9.28503C84.8483 9.06184 85.0508 8.78714 85.1916 8.46779C85.3324 8.14845 85.4045 7.78791 85.4045 7.38616C85.4045 6.98441 85.3359 6.63416 85.1951 6.31482C85.0543 5.99548 84.8586 5.72421 84.5976 5.50445C84.3401 5.28469 84.0241 5.113 83.6533 4.99282C83.2825 4.87264 82.867 4.81426 82.4068 4.81426H78.197V9.98209H82.3691V9.97865Z" fill="currentColor"></path>
+								<path d="M86.7966 17.6703L92.2838 2.36942H96.3391L101.754 17.6703H98.7633L97.5546 14.0717H90.9549L89.7291 17.6703H86.7966ZM96.7511 11.6715L94.2754 4.27859L91.7653 11.6715H96.7511Z" fill="currentColor"></path>
+								<path d="M116.474 17.6703H112.254L105.397 4.60137V17.6703H102.68V2.36942H107.223L113.761 14.7894V2.36942H116.477V17.6703H116.474Z" fill="currentColor"></path>
+								<path d="M118.122 2.36942H123.427C124.204 2.36942 124.938 2.45183 125.625 2.61665C126.312 2.78147 126.947 3.0184 127.524 3.32744C128.101 3.63648 128.619 4.01763 129.079 4.46402C129.536 4.91041 129.924 5.41861 130.244 5.98518C130.559 6.55175 130.803 7.17326 130.975 7.84972C131.143 8.52617 131.229 9.24726 131.229 10.0199C131.229 10.7925 131.143 11.5135 130.975 12.19C130.807 12.8665 130.563 13.488 130.244 14.0545C129.928 14.6211 129.54 15.1293 129.079 15.5757C128.623 16.0221 128.104 16.4032 127.524 16.7123C126.947 17.0213 126.312 17.2582 125.625 17.4231C124.938 17.5879 124.204 17.6703 123.427 17.6703H118.122V2.36942ZM123.393 15.1774C124.183 15.1774 124.887 15.0606 125.505 14.8306C126.126 14.6005 126.652 14.264 127.081 13.821C127.51 13.3815 127.84 12.8424 128.067 12.2037C128.293 11.5651 128.406 10.8371 128.406 10.0199C128.406 9.20262 128.293 8.47466 128.067 7.83598C127.84 7.1973 127.51 6.6582 127.081 6.21867C126.652 5.77915 126.126 5.44264 125.505 5.20915C124.883 4.97565 124.179 4.86233 123.393 4.86233H120.893V15.1774H123.393Z" fill="currentColor"></path>
+								<path d="M135.528 17.6703H132.716V2.36942H135.528V17.6703Z" fill="currentColor"></path>
+								<path d="M70.355 37.903L75.8422 22.6021H79.8974L85.3125 37.903H82.3217L81.113 34.3044H74.5133L73.2874 37.903H70.355ZM80.3095 31.9076L77.8337 24.5147L75.3236 31.9076H80.3095Z" fill="currentColor"></path>
+								<path d="M87.8809 30.2515C87.8809 31.1237 87.9771 31.9031 88.1728 32.5899C88.3685 33.2732 88.6501 33.8535 89.0244 34.324C89.3987 34.7944 89.8588 35.1549 90.4013 35.4022C90.9439 35.6494 91.5654 35.773 92.259 35.773C92.9011 35.773 93.4952 35.6769 94.0446 35.4846C94.5905 35.2923 95.0678 35.0244 95.4764 34.6776C95.8816 34.3308 96.2078 33.9222 96.4516 33.4449C96.6954 32.9676 96.8293 32.4457 96.8568 31.8791H92.0804V29.7193H99.5386V37.9054H96.8843V33.8501C96.692 34.5128 96.4207 35.1137 96.0739 35.6563C95.7271 36.1988 95.3151 36.6555 94.8412 37.0366C94.3673 37.4178 93.8385 37.7097 93.2548 37.9157C92.6711 38.1217 92.0461 38.2247 91.3731 38.2247C90.7584 38.2247 90.1781 38.1354 89.6253 37.9603C89.0759 37.7852 88.5643 37.5311 88.0973 37.2015C87.6303 36.8718 87.2079 36.4701 86.8336 35.9996C86.4559 35.5258 86.1366 34.997 85.8722 34.4064C85.6078 33.8158 85.4052 33.1736 85.2644 32.4766C85.1236 31.7795 85.0515 31.0413 85.0515 30.2584C85.0515 29.4755 85.1305 28.7132 85.2919 28.0127C85.4533 27.3088 85.6833 26.6632 85.9889 26.0726C86.2911 25.482 86.6585 24.9532 87.0912 24.4828C87.5238 24.0123 88.008 23.6175 88.5505 23.2913C89.0931 22.965 89.6837 22.7178 90.3258 22.5461C90.9679 22.3744 91.6478 22.2852 92.3689 22.2852C93.2617 22.2852 94.0961 22.4191 94.8721 22.6835C95.6481 22.9479 96.3418 23.329 96.953 23.8269C97.5642 24.3214 98.0758 24.9223 98.4913 25.6296C98.9068 26.337 99.1952 27.1302 99.3566 28.0093H96.5478C96.4276 27.4839 96.2387 27.0238 95.9881 26.622C95.7374 26.2203 95.4318 25.8837 95.0747 25.6125C94.7176 25.3412 94.3124 25.1318 93.8591 24.991C93.4059 24.8502 92.908 24.7781 92.3757 24.7781C91.6684 24.7781 91.0366 24.9017 90.4803 25.1455C89.9206 25.3893 89.4502 25.7464 89.0656 26.2168C88.681 26.6872 88.3857 27.2607 88.1831 27.9406C87.9805 28.6205 87.8775 29.3931 87.8775 30.2584L87.8809 30.2515Z" fill="currentColor"></path>
+								<path d="M111.642 22.6044V25.087H104.002V29.0667H111.011V31.4738H104.002V35.4226H111.845V37.9052H101.19V22.6044H111.642Z" fill="currentColor"></path>
+								<path d="M126.876 37.903H122.656L115.799 24.8341V37.903H113.083V22.6021H117.626L124.164 35.0221V22.6021H126.88V37.903H126.876Z" fill="currentColor"></path>
+								<path d="M131.186 30.2505C131.186 31.1158 131.289 31.8918 131.491 32.5683C131.694 33.2447 131.989 33.8216 132.374 34.292C132.758 34.7625 133.229 35.1161 133.785 35.3634C134.341 35.6072 134.973 35.7308 135.684 35.7308C136.831 35.7308 137.754 35.4046 138.455 34.759C139.155 34.11 139.622 33.1417 139.856 31.8609H142.658C142.503 32.8533 142.232 33.7426 141.837 34.529C141.442 35.3153 140.944 35.9814 140.343 36.5308C139.743 37.0802 139.049 37.4992 138.263 37.791C137.476 38.0829 136.614 38.2271 135.677 38.2271C134.956 38.2271 134.276 38.1413 133.634 37.9662C132.992 37.7945 132.401 37.5438 131.859 37.221C131.316 36.8948 130.829 36.4999 130.399 36.0295C129.967 35.5591 129.599 35.0303 129.297 34.4397C128.995 33.8491 128.761 33.2035 128.6 32.4996C128.439 31.7957 128.36 31.0471 128.36 30.2539C128.36 29.4607 128.439 28.7087 128.6 28.0082C128.761 27.3043 128.991 26.6588 129.297 26.0681C129.599 25.4775 129.967 24.9487 130.399 24.4783C130.832 24.0079 131.316 23.613 131.859 23.2868C132.401 22.9606 132.992 22.7133 133.634 22.5417C134.276 22.37 134.956 22.2807 135.677 22.2807C136.614 22.2807 137.476 22.4249 138.263 22.7168C139.049 23.0087 139.743 23.4276 140.343 23.977C140.944 24.5264 141.442 25.1925 141.837 25.9789C142.232 26.7652 142.503 27.6545 142.658 28.6469H139.856C139.619 27.3627 139.152 26.3978 138.455 25.7488C137.754 25.0998 136.831 24.777 135.684 24.777C134.973 24.777 134.341 24.9007 133.785 25.1445C133.229 25.3883 132.758 25.7454 132.374 26.2158C131.989 26.6862 131.694 27.2597 131.491 27.9395C131.289 28.6194 131.186 29.392 131.186 30.2573V30.2505Z" fill="currentColor"></path>
+								<path d="M156.458 22.6044L150.597 32.2189V37.9052H147.785V32.2292L141.971 22.6044H145.137L149.223 29.5783L153.364 22.6044H156.462H156.458Z" fill="currentColor"></path>
+								<path d="M151.463 1.99442C148.706 1.99442 146.464 4.23667 146.464 6.99399C146.464 9.75131 148.706 11.9936 151.463 11.9936C154.221 11.9936 156.463 9.75131 156.463 6.99399C156.463 4.23667 154.217 1.99442 151.463 1.99442ZM151.463 11.2999C149.087 11.2999 147.157 9.36672 147.157 6.99399C147.157 4.62125 149.087 2.68804 151.463 2.68804C153.84 2.68804 155.769 4.61782 155.769 6.99399C155.769 9.37016 153.836 11.2999 151.463 11.2999Z" fill="currentColor"></path>
+								<path d="M153.661 5.18192V9.06895H152.967V6.3597L149.966 9.31618L149.482 8.82515L152.469 5.87554H149.722V5.18192H153.661Z" fill="currentColor"></path>
+								<path d="M37.7646 4.81415V8.75955H-0.00341797V0H33.5274L37.7646 4.81415Z" fill="currentColor"></path>
+								<path d="M37.7646 15.6205H-0.00341797V24.3801H37.7646V15.6205Z" fill="currentColor"></path>
+								<path d="M37.7646 31.2411V40.0006H4.23386L-0.00341797 35.1418V31.2411H37.7646Z" fill="currentColor"></path>
+							</svg>
+						</a>
+						<div class="header__menu menu">
+							<button type="button" data-fls-menu="" class="menu__icon icon-menu">
+								<span class="icon-menu__text">Menu</span>
+								<span class="icon-menu__close">Close</span>
+							</button>
+							<nav class="menu__body">
+								<ul class="menu__list">
+									<li class="menu__item">
+										<a href="#" class="menu__link link-decor" data-hover-toggle="">Services</a>
+										<div class="submenu" data-submenu="">
+											<div class="submenu__head">
+												<button type="button" class="submenu__close" data-close-parent="">
+													<span class="submenu__close-icon">
+														<svg width="12" height="10" viewbox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M11.5 4.99996L0.500001 4.99996M0.500001 4.99996L3.97369 8.66663M0.500001 4.99996L3.97369 1.33329" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+														</svg>
+													</span>
+													<span class="submenu__close-text">Back</span>
+												</button>
+											</div>
+											<ul class="submenu__list">
+												<li class="submenu__item">
+													<a href="#" class="submenu__link">Marketing Audit</a>
+												</li>
+												<li class="submenu__item">
+													<a href="#" class="submenu__link">SEO</a>
+												</li>
+												<li class="submenu__item">
+													<a href="#" class="submenu__link">Web Design</a>
+												</li>
+												<li class="submenu__item">
+													<a href="#" class="submenu__link">Web Development</a>
+												</li>
+												<li class="submenu__item">
+													<a href="#" class="submenu__link">PPC</a>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li class="menu__item">
+										<a href="#" class="menu__link link-decor">Portfolio</a>
+									</li>
+									<li class="menu__item">
+										<a href="#" class="menu__link link-decor">Blog</a>
+									</li>
+									<li class="menu__item">
+										<a href="#" class="menu__link link-decor">Contact us</a>
+									</li>
+								</ul>
+								<div class="menu__bottom">
+									<a href="mailto:expanid@gmail.com" class="menu__contact">expanid@gmail.com</a>
+									<div class="menu__socials">
+										<a href="#" class="menu__social">Instagram</a>
+										<a href="#" class="menu__social">Linkendin</a>
+									</div>
+								</div>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</header>
+			<main class="page page--article">
+				<section class="article-detail">
+					<div class="article-detail__container">
+						<div class="article-detail__promo">
+							<div class="article-detail__promo-img">
+								<img alt="Image" loading="lazy" src="./assets/img/article/image.webp">
+							</div>
+							<div class="article-detail__promo-content">
+								<h1 class="article-detail__title title title--h2">AI in Cross-Border Payments: The Revolution is Here</h1>
+								<div class="article-detail__descr">
+									Make an appointment with one of our digital marketing experts and get your free pre-audit.
+								</div>
+								<div class="article-detail__tags tags-block">
+									<a href="#" class="tags-block__btn tags-block__btn--dark">React</a>
+									<a href="#" class="tags-block__btn tags-block__btn--dark">React Native</a>
+									<a href="#" class="tags-block__btn tags-block__btn--dark">Nestjs</a>
+									<a href="#" class="tags-block__btn tags-block__btn--dark">Branding</a>
+									<a href="#" class="tags-block__btn tags-block__btn--dark">UI/UX</a>
+								</div>
+								<div class="article-detail__author">
+									<div class="article-detail__author-img">
+										<img alt="Image" loading="lazy" src="./assets/img/reviews/image-3.webp">
+									</div>
+									<div class="article-detail__author-body">
+										<div class="article-detail__author-name">Ed Frank</div>
+										<div class="article-detail__author-position">CTO, Buynow</div>
+									</div>
+								</div>
+								<div class="article-detail__badges">
+									<div class="article-detail__badge">12, December, 2024</div>
+									<div class="article-detail__badge">13 min to read</div>
+								</div>
+							</div>
+						</div>
+						<div class="article-detail__body">
+							<div class="article-detail__content">
+								<div id="some-section-1" class="article-detail__section" data-scroll-section="">
+									<h6>Introduction</h6>
+									<p>
+										Many people are still skeptical about blockchain, especially when it comes to transferring money
+                        over borders, but in vain. It’s a fast, safe, and easy way that help individuals support their
+                        families abroad and conduct financial transfers for business operations. Data shows that by the
+                        end of May 2024, there will be well over a million daily on-chain transactions for the Ethereum
+                        cryptocurrency. This means that blockchain remittance is gaining momentum. Keep reading the
+                        article to learn more about blockchain money transfers, and how it’s been connecting the
+                        financial world.
+									</p>
+								</div>
+								<div id="some-section-2" class="article-detail__section" data-scroll-section="">
+									<h6>What is Blockchain and How Does It Power Cryptocurrency?</h6>
+									<p>
+										At its very basic level, a blockchain is no more than a computerized ledger. It's a high-tech
+                        notebook with transactions that are transparent, secure, and virtually tamper-proof. To break it
+                        down even further: it's a list of digital blocks linked together in such a way that one block
+                        holds many transactions, which are sealed by a cryptographic lock when filled. It's the
+                        architecture in which no one can travel back in time and rewrite history, hence making
+                        blockchain the bedrock of trust in the digital world.
+									</p>
+									<p>
+										It is the blockchain that gives cryptocurrency its power. It's the backbone, the infrastructure
+                        that makes this whole idea of digital decentralized money work. Unlike conventional banking
+                        systems, where everything rests on intermediaries like banks or even processing units,
+                        blockchain does not need a middleman. Instead, verification and recording of transactions are
+                        performed via a network of computers, often referred to as nodes. This whole process accelerates
+                        on a peer-to-peer basis and cuts down costs considerably. This is why cryptocurrencies are so
+                        popular these days.
+									</p>
+									<p>
+										To put this in perspective, the Bitcoin blockchain, invented in 2009, settles approximately
+                        600,000 transactions a day. Other blockchains, like Ethereum, have expanded on the original
+                        Bitcoin concept to include "smart contracts". These are automatically executed agreements or
+                        rules encoded into the blockchain. Because of its adaptability, blockchain is now a powerful
+                        tool for a wide range of applications, including supply chain management and healthcare, besides
+                        money transfers.
+									</p>
+								</div>
+								<p>
+									<b>Educating the Audience:</b>
+									Not everyone knows what happens to your skin and body during
+                    menopause. Fraktal Beauty had to
+                    explain these changes, why they matter, and how its products meet these unique needs.
+								</p>
+								<div class="article-detail__img">
+									<img alt="Image" loading="lazy" src="./assets/img/project/image-2.webp">
+								</div>
+								<div id="some-section-3" class="article-detail__section" data-scroll-section="">
+									<h6>The Key Benefits of Blockchain in Money Transfers</h6>
+									<p>
+										Blockchain revolutionizes money transfers by solving some of the old problems that always outran
+                        traditional systems. Imagine sending money across the globe as easily and cheaply as sending an
+                        email. That's what blockchain promises to bring to the table.
+									</p>
+								</div>
+								<div id="some-section-4" class="article-detail__section" data-scroll-section="">
+									<h6>1. Speed: No More Waiting</h6>
+									<p>
+										Traditional cross-border payments can take up to days to process, especially when there are many
+                        middlemen. Blockchain removes these middlemen, allowing the transactions to be settled in
+                        minutes or even seconds. Take Ripple's blockchain technology; near-instant transfers are made
+                        possible compared to the SWIFT transactions that usually take 2-5 business days. After all, time
+                        is money, and blockchain knows this.
+									</p>
+								</div>
+								<div id="some-section-5" class="article-detail__section" data-scroll-section="">
+									<h6>2. Lower Costs: Cutting Out the Middleman</h6>
+									<p>
+										Banks and payment processors charge as much as 10% in fees on the amount transferred for
+                        international transfers. Blockchain greatly reduces such costs by eliminating middlemen and
+                        simplifying the process. Transfers of money with Bitcoin or Ethereum could, for instance, cost
+                        merely a fraction of more traditional fees, even with large sums. It is like changing to a
+                        free-flowing express lane from a highway full of tolls.
+									</p>
+								</div>
+								<div class="article-detail__img">
+									<img alt="Image" loading="lazy" src="./assets/img/project/image-4.webp">
+								</div>
+								<div id="some-section-6" class="article-detail__section" data-scroll-section="">
+									<h6>3. Improved Security: Tamper-Proof Transactions</h6>
+									<p>
+										By its very nature, fraud is all but impossible on Blockchain. Every transaction is encrypted,
+                        time-stamped, and recorded on a decentralized ledger in a manner that, once the records are
+                        added, no one can change. This level of security is akin to having a digital vault with a lock
+                        that is completely transparent and impossible to break. It is super useful for senders and
+                        receivers alike.
+									</p>
+								</div>
+								<div id="some-section-7" class="article-detail__section" data-scroll-section="">
+									<h6>4. Transparency: A Clear View of Every Dollar</h6>
+									<p>
+										Everything on the blockchain is visible to all its participants — a scheme as clear as clean
+                        glass. Such openness makes for especially valuable trust in industries like remittances or
+                        donations of all kinds, where accountability is paramount. For example, donors can trace what
+                        happens with their money without third-party audits.
+									</p>
+								</div>
+								<div id="some-section-8" class="article-detail__section" data-scroll-section="">
+									<h6>5. Accessibility: Empowering the Unbanked</h6>
+									<p>
+										An estimated 1.4 billion adults lack access to basic banking services worldwide. Blockchain and
+                        cryptocurrencies turn this on their head by making anyone with an internet connection capable of
+                        sending and receiving money. This has proved transformative in regions such as Africa, where
+                        blockchain-based platforms like BitPesa have opened up financial opportunities to millions.
+									</p>
+								</div>
+								<div id="some-section-9" class="article-detail__section" data-scroll-section="">
+									<h6>6. Resilience: Always Online, Always Reliable</h6>
+									<p>
+										Everything on the blockchain is visible to all its participants — a scheme as clear as clean
+                        glass. Such openness makes for especially valuable trust in industries like remittances or
+                        donations of all kinds, where accountability is paramount. For example, donors can trace what
+                        happens with their money without third-party audits.
+									</p>
+								</div>
+								<div class="proposal-block">
+									<div class="proposal-block__body">
+										<div class="proposal-block__title">Discover what's Possible with Your Next Project</div>
+										<div class="proposal-block__text">
+											Determine the cost of your software effortlessly with our interactive solution, enabling you
+                            to select the desired functionality quickly and seamlessly.
+										</div>
+										<a href="#" class="proposal-block__btn button button--light-shadow button--small">Get it touch</a>
+									</div>
+									<div class="proposal-block__img">
+										<img src="./assets/img/article/logo.svg" alt="Image" loading="lazy">
+									</div>
+								</div>
+								<div id="some-section-10" class="article-detail__section" data-scroll-section="">
+									<h6>Challenges Facing Blockchain and Cryptocurrency in Money Transfers</h6>
+									<p>
+										When it comes to products like those from Fraktal Beauty that focus on health and beauty,
+                        especially for things like
+                        menopause, it’s super important to be open and honest about what’s in the products, how they
+                        help, and what other people
+                        have said about them. But finding the right way to present it can be tricky.
+									</p>
+								</div>
+								<div id="some-section-11" class="article-detail__section" data-scroll-section="">
+									<h6>Future Trends: What’s Next for Blockchain in Finance?</h6>
+									<p>
+										The website must use language that is inclusive, sensitive, and empowering, avoiding any
+                        negative connotations
+                        associated with aging or menopause. It’s all about choosing words carefully and keeping a
+                        positive vibe so that everyone
+                        who visits feels good about being there.
+									</p>
+								</div>
+								<div id="some-section-12" data-fls-slider="" class="article-detail__slider swiper" data-scroll-section="">
+									<div class="article-detail__wrapper swiper-wrapper">
+										<div class="article-detail__slide swiper-slide">
+											<img alt="Image" loading="lazy" src="./assets/img/project/image-3.webp">
+										</div>
+										<div class="article-detail__slide swiper-slide">
+											<img alt="Image" loading="lazy" src="./assets/img/project/image-4.webp">
+										</div>
+										<div class="article-detail__slide swiper-slide">
+											<img alt="Image" loading="lazy" src="./assets/img/project/image-5.webp">
+										</div>
+									</div>
+									<div class="swiper-pagination"></div>
+								</div>
+							</div>
+							<aside class="article-detail__aside" data-article-menu="">
+								<div class="article-detail__aside-body">
+									<div class="article-detail__aside-title">ARTICLE MENU</div>
+									<ul class="article-detail__aside-list">
+										<li class="article-detail__aside-item">
+											<a href="#" class="article-detail__aside-link" data-fls-scrollto-top="30" data-fls-scrollto="#some-section-1">Introduction</a>
+										</li>
+										<li class="article-detail__aside-item">
+											<a href="#" class="article-detail__aside-link" data-fls-scrollto-top="30" data-fls-scrollto="#some-section-2">What is Blockchain and How Does It Power Cryptocurrency?</a>
+										</li>
+										<li class="article-detail__aside-item">
+											<a href="#" class="article-detail__aside-link" data-fls-scrollto-top="30" data-fls-scrollto="#some-section-3">The Key Benefits of Blockchain in Money Transfers</a>
+										</li>
+										<li class="article-detail__aside-item">
+											<a href="#" class="article-detail__aside-link" data-fls-scrollto-top="30" data-fls-scrollto="#some-section-4">1. Speed: No More Waiting</a>
+										</li>
+										<li class="article-detail__aside-item">
+											<a href="#" class="article-detail__aside-link" data-fls-scrollto-top="30" data-fls-scrollto="#some-section-5">2. Lower Costs: Cutting Out the Middleman</a>
+										</li>
+										<li class="article-detail__aside-item">
+											<a href="#" class="article-detail__aside-link" data-fls-scrollto-top="30" data-fls-scrollto="#some-section-6">3. Improved Security: Tamper-Proof Transactions</a>
+										</li>
+										<li class="article-detail__aside-item">
+											<a href="#" class="article-detail__aside-link" data-fls-scrollto-top="30" data-fls-scrollto="#some-section-7">4. Transparency: A Clear View of Every Dollar</a>
+										</li>
+										<li class="article-detail__aside-item">
+											<a href="#" class="article-detail__aside-link" data-fls-scrollto-top="30" data-fls-scrollto="#some-section-8">5. Accessibility: Empowering the Unbanked</a>
+										</li>
+										<li class="article-detail__aside-item">
+											<a href="#" class="article-detail__aside-link" data-fls-scrollto-top="30" data-fls-scrollto="#some-section-9">6. Resilience: Always Online, Always Reliable</a>
+										</li>
+										<li class="article-detail__aside-item">
+											<a href="#" class="article-detail__aside-link" data-fls-scrollto-top="30" data-fls-scrollto="#some-section-10">Challenges Facing Blockchain and Cryptocurrency in Money Transfers</a>
+										</li>
+										<li class="article-detail__aside-item">
+											<a href="#" class="article-detail__aside-link" data-fls-scrollto-top="30" data-fls-scrollto="#some-section-11">Future Trends: What’s Next for Blockchain in Finance?</a>
+										</li>
+										<li class="article-detail__aside-item">
+											<a href="#" class="article-detail__aside-link" data-fls-scrollto-top="30" data-fls-scrollto="#some-section-12">Wrapping Up</a>
+										</li>
+									</ul>
+									<div class="article-detail__contacts">
+										<div class="article-detail__contacts-title">Looking to hire developers?</div>
+										<div class="article-detail__contacts-text">Hire experienced developers to build your next project with Expandi</div>
+										<a href="#" class="article-detail__contacts-btn button button--light-shadow button--small">Contact us</a>
+									</div>
+								</div>
+							</aside>
+						</div>
+						<button type="button" class="article-detail__menu" data-article-menu-btn="">
+							<svg width="20" height="24" viewbox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<rect y="0.5" width="20" height="3" fill="currentColor"></rect>
+								<rect y="10.5" width="20" height="3" fill="currentColor"></rect>
+								<rect y="20.5" width="20" height="3" fill="currentColor"></rect>
+							</svg>
+						</button>
+					</div>
+				</section>
+				<section class="articles">
+					<div class="articles__container">
+						<div class="articles__head">
+							<h2 class="articles__title title title--h4">Recent Articles</h2>
+							<a href="#" class="articles__more link-decor">More articles</a>
+						</div>
+						<div class="articles__items">
+							<article class="article-card" data-fls-watcher="" data-fls-watcher-threshold="0.6">
+								<div class="article-card__img">
+									<img alt="Image" loading="lazy" src="./assets/img/blog/Image-1.webp">
+									<div class="article-card__arrow">
+										<svg width="18" height="18" viewbox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M1.20581 12.9998L16.7943 3.99979M16.7943 3.99979L4.29679 0.822911M16.7943 3.99979L13.2968 16.4114" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+									</div>
+								</div>
+								<a href="#" class="article-card__title title title--h6">AI in Cross-Border Payments: The Revolution is Here</a>
+								<div class="article-card__author">
+									<div class="article-card__author-img">
+										<img alt="Image" loading="lazy" src="./assets/img/reviews/image-1.webp">
+									</div>
+									<div class="article-card__author-body">
+										<div class="article-card__author-name">Oleg Toretto</div>
+										<div class="article-card__author-position">CTO, Buynow</div>
+									</div>
+								</div>
+								<div class="article-card__badges">
+									<div class="article-card__badge">12, December, 2024</div>
+									<div class="article-card__badge">13 min to read</div>
+								</div>
+							</article>
+							<article class="article-card" data-fls-watcher="" data-fls-watcher-threshold="0.6">
+								<div class="article-card__img">
+									<img alt="Image" loading="lazy" src="./assets/img/blog/Image-2.webp">
+									<div class="article-card__arrow">
+										<svg width="18" height="18" viewbox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M1.20581 12.9998L16.7943 3.99979M16.7943 3.99979L4.29679 0.822911M16.7943 3.99979L13.2968 16.4114" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+									</div>
+								</div>
+								<a href="#" class="article-card__title title title--h6">Money Transfer Software: Everything You Need to Kno...</a>
+								<div class="article-card__author">
+									<div class="article-card__author-img">
+										<img alt="Image" loading="lazy" src="./assets/img/reviews/image-3.webp">
+									</div>
+									<div class="article-card__author-body">
+										<div class="article-card__author-name">Ed Frank</div>
+										<div class="article-card__author-position">CTO, Buynow</div>
+									</div>
+								</div>
+								<div class="article-card__badges">
+									<div class="article-card__badge">12, December, 2024</div>
+									<div class="article-card__badge">13 min to read</div>
+								</div>
+							</article>
+							<article class="article-card" data-fls-watcher="" data-fls-watcher-threshold="0.6">
+								<div class="article-card__img">
+									<img alt="Image" loading="lazy" src="./assets/img/blog/Image-3.webp">
+									<div class="article-card__arrow">
+										<svg width="18" height="18" viewbox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M1.20581 12.9998L16.7943 3.99979M16.7943 3.99979L4.29679 0.822911M16.7943 3.99979L13.2968 16.4114" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+									</div>
+								</div>
+								<a href="#" class="article-card__title title title--h6">How to Create a Money Transfer App: Expert Advice</a>
+								<div class="article-card__author">
+									<div class="article-card__author-img">
+										<img alt="Image" loading="lazy" src="./assets/img/reviews/image-2.webp">
+									</div>
+									<div class="article-card__author-body">
+										<div class="article-card__author-name">David Guetta</div>
+										<div class="article-card__author-position">CTO, Buynow</div>
+									</div>
+								</div>
+								<div class="article-card__badges">
+									<div class="article-card__badge">12, December, 2024</div>
+									<div class="article-card__badge">13 min to read</div>
+								</div>
+							</article>
+						</div>
+					</div>
+				</section>
+				<section class="discuss">
+					<div class="discuss__container">
+						<a href="#" class="discuss__biglink">
+							<span>
+								Discuss
+								<br>
+								my project
+							</span>
+							<span class="discuss__biglink-arrow">
+								<svg width="44" height="32" viewbox="0 0 44 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M1.50073 31.0096L42.2039 7.50962M42.2039 7.50962L36.8503 27.9211M42.2039 7.50962L21.8503 1.94029" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg>
+							</span>
+						</a>
+						<div class="discuss__text">
+							Or you can
+							<a href="#" class="discuss__link">Book a Free Demo Сall</a>
+							at a convenient time
+						</div>
+					</div>
+				</section>
+			</main>
+			<footer class="footer fixed-block-hide">
+				<div class="footer__container">
+					<div class="footer__head">
+						<div class="footer__media">
+							<div class="footer__media-icon img-darklite">
+								<img class="img-darklite__dark" alt="Image" loading="lazy" src="./assets/img/footer/clutch-dark.webp">
+								<img class="img-darklite__light" alt="Image" loading="lazy" src="./assets/img/footer/clutch-light.webp">
+							</div>
+							<div class="footer__media-icon img-darklite">
+								<img class="img-darklite__dark" alt="Image" loading="lazy" src="./assets/img/footer/manifest-dark.webp">
+								<img class="img-darklite__light" alt="Image" loading="lazy" src="./assets/img/footer/manifest-light.webp">
+							</div>
+							<div class="footer__media-icon img-darklite">
+								<img class="img-darklite__dark" alt="Image" loading="lazy" src="./assets/img/footer/designrush-dark.webp">
+								<img class="img-darklite__light" alt="Image" loading="lazy" src="./assets/img/footer/designrush-light.webp">
+							</div>
+							<div class="footer__media-icon img-darklite">
+								<img class="img-darklite__dark" alt="Image" loading="lazy" src="./assets/img/footer/goodfirms-dark.webp">
+								<img class="img-darklite__light" alt="Image" loading="lazy" src="./assets/img/footer/goodfirms-light.webp">
+							</div>
+						</div>
+						<div class="footer__actions">
+							<div class="footer__socials">
+								<a href="#" class="footer__social link-decor">Instagram</a>
+								<a href="#" class="footer__social link-decor">Behance</a>
+								<a href="#" class="footer__social link-decor">Linkedin</a>
+							</div>
+							<div class="footer__langs">
+								<a href="#" class="footer__lang">En</a>
+								<a href="#" class="footer__lang">Ua</a>
+								<a href="#" class="footer__lang">DE</a>
+								<a href="#" class="footer__lang">He</a>
+								<a href="#" class="footer__lang">Sk</a>
+								<a href="#" class="footer__lang">Es</a>
+							</div>
+						</div>
+					</div>
+					<nav class="footer__menu">
+						<div class="footer__menu-col">
+							<div class="footer__menu-title">AUDITS</div>
+							<ul class="footer__menu-list">
+								<li class="footer__menu-item">
+									<a href="#" class="footer__menu-link link-decor">SEO AUDIT</a>
+								</li>
+								<li class="footer__menu-item">
+									<a href="#" class="footer__menu-link link-decor">GOOGLE ADS AUDIT</a>
+								</li>
+								<li class="footer__menu-item">
+									<a href="#" class="footer__menu-link link-decor">WEBSITE AUDIT</a>
+								</li>
+								<li class="footer__menu-item">
+									<a href="#" class="footer__menu-link link-decor">DESIGN AUDIT</a>
+								</li>
+								<li class="footer__menu-item">
+									<a href="#" class="footer__menu-link link-decor">BING ADS AUDIT</a>
+								</li>
+								<li class="footer__menu-item">
+									<a href="#" class="footer__menu-link link-decor">TECHNICAL WEBSITE AUDIT</a>
+								</li>
+								<li class="footer__menu-item">
+									<a href="#" class="footer__menu-link link-decor">MARKETING AUDIT</a>
+								</li>
+							</ul>
+						</div>
+						<div class="footer__menu-col">
+							<div class="footer__menu-title">SEO</div>
+							<ul class="footer__menu-list">
+								<li class="footer__menu-item">
+									<a href="#" class="footer__menu-link link-decor">MONTHLY SEO SERVICES</a>
+								</li>
+								<li class="footer__menu-item">
+									<a href="#" class="footer__menu-link link-decor">ECOMMERCE SEO</a>
+								</li>
+								<li class="footer__menu-item">
+									<a href="#" class="footer__menu-link link-decor">LOCAL SEO SERVICES</a>
+								</li>
+								<li class="footer__menu-item">
+									<a href="#" class="footer__menu-link link-decor">SEO CONSULTANT</a>
+								</li>
+								<li class="footer__menu-item">
+									<a href="#" class="footer__menu-link link-decor">SHOPIFY SEO EXPERT</a>
+								</li>
+								<li class="footer__menu-item">
+									<a href="#" class="footer__menu-link link-decor">WORDPRESS SEO COMPANY</a>
+								</li>
+								<li class="footer__menu-item">
+									<a href="#" class="footer__menu-link link-decor">FINTECH SEO AGENCY</a>
+								</li>
+							</ul>
+						</div>
+						<div class="footer__menu-col">
+							<div class="footer__menu-title">WEB DESIGN</div>
+							<ul class="footer__menu-list">
+								<li class="footer__menu-item">
+									<a href="#" class="footer__menu-link link-decor">WEB DESIGN COMPANY</a>
+								</li>
+								<li class="footer__menu-item">
+									<a href="#" class="footer__menu-link link-decor">WORDPRESS WEB DESIGN</a>
+								</li>
+								<li class="footer__menu-item">
+									<a href="#" class="footer__menu-link link-decor">ECOMMERCE WEB DESIGN</a>
+								</li>
+								<li class="footer__menu-item">
+									<a href="#" class="footer__menu-link link-decor">LANDING PAGE DESIGN</a>
+								</li>
+								<li class="footer__menu-item">
+									<a href="#" class="footer__menu-link link-decor">WHITE LABEL WEB DESIGN</a>
+								</li>
+								<li class="footer__menu-item">
+									<a href="#" class="footer__menu-link link-decor">WEBSITE REDESIGN</a>
+								</li>
+							</ul>
+						</div>
+						<div class="footer__menu-col">
+							<div class="footer__menu-title">DEVELOPMENT</div>
+							<ul class="footer__menu-list">
+								<li class="footer__menu-item">
+									<a href="#" class="footer__menu-link link-decor">SHOPIFY DEVELOPMENT SERVICES</a>
+								</li>
+								<li class="footer__menu-item">
+									<a href="#" class="footer__menu-link link-decor">SHOPIFY MAINTENANCE SERVICES</a>
+								</li>
+								<li class="footer__menu-item">
+									<a href="#" class="footer__menu-link link-decor">HTML TO WORDPRESS SERVICE</a>
+								</li>
+								<li class="footer__menu-item">
+									<a href="#" class="footer__menu-link link-decor">LANDING PAGE OPTIMIZATION SERVICES</a>
+								</li>
+								<li class="footer__menu-item">
+									<a href="#" class="footer__menu-link link-decor">CUSTOM WEBSITE DEVELOPMENT</a>
+								</li>
+								<li class="footer__menu-item">
+									<a href="#" class="footer__menu-link link-decor">LANDING PAGE DEVELOPMENT</a>
+								</li>
+								<li class="footer__menu-item">
+									<a href="#" class="footer__menu-link link-decor">HTML DEVELOPMENT</a>
+								</li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>
